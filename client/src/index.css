@@ -1,0 +1,606 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  font-size:16px;
+  scroll-behavior:smooth;
+}
+
+html,
+body{
+  width:100%;
+  min-height:100%;
+}
+
+body{
+  font-family:Inter,sans-serif;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+
+  background:
+    linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.20)),
+    url("/videos/image.png");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
+}
+
+/* ===========================
+   HOME
+=========================== */
+
+.home-page{
+  width:100%;
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+
+  padding:20px;
+}
+
+/* ===========================
+   APOLOGY CARD
+=========================== */
+
+.apology-card{
+
+  width:100%;
+  max-width:650px;
+
+  background:rgba(255,255,255,.18);
+
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+
+  border:1px solid rgba(255,255,255,.25);
+
+  border-radius:22px;
+
+  padding:clamp(18px,4vw,35px);
+
+  text-align:center;
+
+  box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.apology-card h1{
+
+  font-size:clamp(1.7rem,4vw,2.8rem);
+
+  margin-bottom:15px;
+
+}
+
+.apology-card h2{
+
+  font-size:clamp(1.4rem,3vw,2rem);
+
+  margin-bottom:10px;
+
+}
+
+.apology-card h3{
+
+  font-size:clamp(1.1rem,2.5vw,1.5rem);
+
+  margin-bottom:10px;
+
+}
+
+.apology-card p{
+
+  font-size:clamp(.95rem,2vw,1.1rem);
+
+  line-height:1.8;
+
+  margin:12px 0;
+
+  word-wrap:break-word;
+
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.sorry-image{
+
+  width:min(60vw,230px);
+
+  aspect-ratio:1;
+
+  object-fit:cover;
+
+  display:block;
+
+  margin:20px auto;
+
+  border-radius:20px;
+
+  cursor:pointer;
+
+  transition:.35s;
+
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.sorry-image:hover{
+
+  transform:scale(1.05);
+
+}
+
+/* ===========================
+   VIDEO
+=========================== */
+
+.apology-card video{
+
+  width:100%;
+
+  border-radius:16px;
+
+  margin-top:18px;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn-container{
+
+  margin-top:22px;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  flex-wrap:wrap;
+
+  gap:15px;
+
+}
+
+.accept-btn,
+.reject-btn{
+
+  flex:1;
+
+  min-width:150px;
+
+  max-width:220px;
+
+  border:none;
+
+  padding:14px 18px;
+
+  border-radius:14px;
+
+  cursor:pointer;
+
+  font-size:1rem;
+
+  font-weight:600;
+
+  transition:.3s;
+
+}
+
+.accept-btn{
+
+  background:#ffffff;
+
+}
+
+.reject-btn{
+
+  background:#ff4d6d;
+
+  color:#000;
+
+}
+
+.accept-btn:hover,
+.reject-btn:hover{
+
+  transform:translateY(-3px);
+
+}
+
+button:disabled{
+
+  opacity:.6;
+
+  cursor:not-allowed;
+
+}
+
+/* ===========================
+   SUCCESS
+=========================== */
+
+.success-msg{
+
+  margin-top:18px;
+
+  font-weight:600;
+
+  font-size:1rem;
+
+}
+
+/* ===========================
+   HEART
+=========================== */
+
+.heart{
+
+  position:fixed;
+
+  bottom:-40px;
+
+  font-size:22px;
+
+  animation:floatHeart 8s linear infinite;
+
+  z-index:-1;
+
+}
+
+@keyframes floatHeart{
+
+  from{
+
+    transform:translateY(0) rotate(0);
+
+    opacity:1;
+
+  }
+
+  to{
+
+    transform:translateY(-120vh) rotate(360deg);
+
+    opacity:0;
+
+  }
+
+}
+
+/* ===========================
+   ADMIN
+=========================== */
+
+.admin-page{
+
+  width:100%;
+
+  max-width:1200px;
+
+  padding:20px;
+
+}
+
+.admin-page h1{
+
+  color:white;
+
+  text-align:center;
+
+  margin-bottom:25px;
+
+  font-size:clamp(2rem,5vw,3rem);
+
+}
+
+.stats-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+  gap:18px;
+
+  margin-bottom:25px;
+
+}
+
+.stat-card{
+
+  background:rgba(255,255,255,.18);
+
+  backdrop-filter:blur(20px);
+
+  border-radius:18px;
+
+  padding:22px;
+
+  text-align:center;
+
+  color:white;
+
+}
+
+.response-list{
+
+  display:grid;
+
+  gap:18px;
+
+}
+
+.response-card{
+
+  background:rgba(255,255,255,.18);
+
+  backdrop-filter:blur(20px);
+
+  border-radius:18px;
+
+  padding:18px;
+
+  color:white;
+
+  word-break:break-word;
+
+}
+
+/* ===========================
+   MESSAGE POPUP
+=========================== */
+
+.message-popup{
+
+  margin-top:20px;
+
+  width:100%;
+  max-width:500px;
+
+  background:rgba(255,255,255,.18);
+
+  backdrop-filter:blur(20px);
+
+  border-radius:18px;
+
+  padding:20px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:15px;
+
+}
+
+.message-popup h2{
+
+  color:white;
+
+  font-size:1.4rem;
+
+  text-align:center;
+
+}
+
+.message-popup textarea{
+
+  width:100%;
+
+  min-height:130px;
+
+  border:none;
+
+  outline:none;
+
+  resize:vertical;
+
+  border-radius:12px;
+
+  padding:14px;
+
+  font-size:1rem;
+
+}
+
+.message-popup button{
+
+  border:none;
+
+  padding:14px;
+
+  border-radius:12px;
+
+  cursor:pointer;
+
+  font-size:1rem;
+
+}
+
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width:992px){
+
+  body{
+
+    padding:18px;
+
+    background-attachment:scroll;
+
+  }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+  body{
+
+    padding:15px;
+
+  }
+
+  .apology-card{
+
+    border-radius:18px;
+
+    padding:22px 18px;
+
+  }
+
+  .btn-container{
+
+    flex-direction:column;
+
+  }
+
+  .accept-btn,
+  .reject-btn{
+
+    width:100%;
+
+    max-width:100%;
+
+  }
+
+  .sorry-image{
+
+    width:min(70vw,200px);
+
+  }
+
+}
+
+/* ===========================
+   SMALL PHONES
+=========================== */
+
+@media (max-width:480px){
+
+  body{
+
+    padding:12px;
+
+  }
+
+  .home-page{
+
+    padding:12px;
+
+  }
+
+  .apology-card{
+
+    border-radius:16px;
+
+    padding:18px 15px;
+
+  }
+
+  .apology-card p{
+
+    font-size:.95rem;
+
+  }
+
+  .sorry-image{
+
+    width:min(75vw,170px);
+
+  }
+
+  .message-popup{
+
+    padding:15px;
+
+  }
+
+}
+
+/* ===========================
+   EXTRA SMALL DEVICES
+=========================== */
+
+@media (max-width:360px){
+
+  .apology-card{
+
+    padding:15px 12px;
+
+  }
+
+  .apology-card h1{
+
+    font-size:1.5rem;
+
+  }
+
+  .accept-btn,
+  .reject-btn{
+
+    padding:12px;
+
+    font-size:.95rem;
+
+  }
+
+}
+
+/* ===========================
+   LANDSCAPE PHONES
+=========================== */
+
+@media (max-height:500px) and (orientation:landscape){
+
+  body{
+
+    padding:20px;
+
+  }
+
+  .home-page{
+
+    padding:15px;
+
+  }
+
+  .apology-card{
+
+    margin:20px auto;
+
+  }
+
+  .sorry-image{
+
+    width:140px;
+
+  }
+
+}
