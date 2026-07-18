@@ -45,13 +45,13 @@ function ResponseButtons({
           Send message😊
         </button>
 
-        {/* <button
+        <button
           className="reject-btn"
           disabled={loading}
           onClick={() => sendResponse("not_yet")}
         >
           😒 Abhi Nahi
-        </button> */}
+        </button>
       </div>
 
       {accepted && (
