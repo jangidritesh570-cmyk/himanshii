@@ -88,7 +88,7 @@ function ApologyCard({ unlocked, setUnlocked }) {
               color: "white",
             }}
           >
-            <b><i></i></b>
+            <b><i>Ohk so This beautiful wesite goes to my one & only influencer sister himanshi🙌 yes himanshi yeh website tere liye hi hai mtlb ohk ab yrr tu itni badhiya reels banati hai toh itna toh banta hai yrr behan bss tu aise hi reels wagera laati reh jaldi viral hogi tu keep it up & ha yeh koi normal website nhi hai jb tu niche send message button pr click kregi toh ek message box khulega toh usme mujhe message likhkar jarur se send krna behan mujhe woh message mujhe aayega phir mai tujhe snap banakr bhejta hoo😂 & haa yrr mzze kro aur phir milte hai jaldi i hope tujhe yeh website pasand aayi hogi but ek chiz ke liye sorry yrr yeh jo background mai teri reel lagayi haina usme thode browser restrictions ki wajah se audio mute hogayi toh uss chiz ke liye sorry yrr😭😭 baaki message jarur likhkar bhejna merko</i></b>
           </p>
         )}
       </motion.div>

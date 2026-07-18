@@ -40,7 +40,7 @@ function MessagePopup({ onClose }) {
       <h2>💌 Himanshi ka Message</h2>
 
       <textarea
-        placeholder="Date & time"
+        placeholder="Himanshi kuch likh yrr mere liye😂"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
